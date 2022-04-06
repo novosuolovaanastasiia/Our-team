@@ -1,6 +1,7 @@
 * {
   margin: 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -30,9 +31,12 @@ body {
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-left: 10%;
   max-width: 1220px;
   margin-top: 81px;
@@ -42,22 +46,25 @@ body {
   width: 40%;
 }
 
-.hr {
-  width: 2%;
-}
-
-.hr hr {
-  height: 485px;
-  width: 1px;
-  border: 0px;
-  background-color: #FACB03;
-}
-
 .content__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 40%;
+}
+
+.content__information__p {
+  padding-top: 25px;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 27px;
+  color: #666666;
 }
 
 .content__h2 {
@@ -76,22 +83,29 @@ body {
   margin-left: 35%;
 }
 
-.content__information__p {
-  padding-top: 25px;
-  font-size: 24px;
-  text-align: center;
-  padding-bottom: 27px;
-  color: #666666;
-}
-
 .content__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 5px;
   padding-bottom: 26px;
 }
 
-.content__text p{
+.hr {
+  width: 2%;
+}
+
+.hrhr {
+  height: 485px;
+  width: 1px;
+  border: 0px;
+  background-color: #FACB03;
+}
+
+.content__text p {
   font-size: 12px;
   line-height: 24px;
   text-align: center;
@@ -103,7 +117,7 @@ body {
   margin-bottom: 20px;
 }
 
-.content__text button{
+.content__text button {
   border: 1px solid #FACB03;
   background-color: #ffffff;
   color: #666666;
@@ -116,7 +130,7 @@ body {
 .dotes {
   padding-left: 48%;
   padding-top: 39px;
-  padding-bottom: 80px; 
+  padding-bottom: 80px;
 }
 
 .content__text .right {
@@ -130,12 +144,4 @@ body {
   margin-left: 8%;
   top: 303px;
 }
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */
